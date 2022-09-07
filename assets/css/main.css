@@ -3941,9 +3941,32 @@ body.is-preload #header.alt .logo {
 	margin-bottom: 40px;
 	padding-bottom: 100px;
 	list-style: none;
+	display: inline-block;
 }
 
 #project-li img {
-	max-width: 800px;
-	max-height: 500px;
+	width: 800px;
+	height: 500px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+	#project-li {
+		margin-bottom: 40px;
+		padding-bottom: 100px;
+		list-style: none;
+		display: inline-block;
+	}
+
+	#project-li img {
+		max-width: 100%;
+		max-height: 200px;
+		display: inline-block;
+	}
+
+	.image img {
+		max-height: 400px;
+		max-width: 400px;
+	}
+
 }
